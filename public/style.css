@@ -1,14 +1,38 @@
 
   body {
     font-family: "Helvetica", sans-serif;
-    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  .title {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .roundLink {
+    display: inline-block;
+    margin-left: 60px;
   }
 
   .roundTitle {
-    padding-left: 30px;
+    margin-left: 50px;
+    text-decoration: underline;
+  }
+
+  .draftRounds {
+    margin-left: 40px;
   }
 
   .selections {
-    margin-left: 25px;
     margin-bottom: 10px;
+  }
+
+  .roundLink {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 75px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: underline;
   }
