@@ -1,0 +1,23 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>NFL Draft Express - 2017 Draft</title>
+      <link rel="stylesheet" href="/public/style.css">
+    </head>
+    <body>
+      <h1>NFL DRAFT 2017</h1>
+      <h3 class="roundTitle">Round 1</h3>
+      <ol class="draftRounds">
+        {{#picks}}
+        <li class="selections">
+          {{team}} {{tradedfrom}}- {{position}} {{player}} ({{college}})
+        </li>
+        {{/picks}}
+      </ol>
+
+      <a href="/draft2017_round2"><h5>Round 2</h5></a>
+
+    </body>
+  </html>
