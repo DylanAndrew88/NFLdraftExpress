@@ -1,7 +1,7 @@
 
   'use strict';
   module.exports = function(sequelize, DataTypes) {
-    var nfl2017draftpicks = sequelize.define('nfl2017draftpicks', {
+    let nfl2017draftpicks = sequelize.define('nfl2017draftpicks', {
       picknumberround: DataTypes.INTEGER,
       picknumberoverall: DataTypes.INTEGER,
       roundnumber: DataTypes.INTEGER,
