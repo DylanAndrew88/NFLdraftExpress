@@ -21,7 +21,7 @@
   }
 
   .draftRounds {
-    margin-left: 40px;
+    margin-left: 50px;
   }
 
   .selections {
@@ -35,4 +35,8 @@
     margin-top: 20px;
     margin-bottom: 40px;
     text-decoration: underline;
+  }
+
+  .roundLink:hover {
+    color: red;
   }
