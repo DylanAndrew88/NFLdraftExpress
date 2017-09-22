@@ -1,7 +1,7 @@
 
   'use strict';
   module.exports = function(sequelize, DataTypes) {
-    let nfl2017draftpicks = sequelize.define('nfl2017draftpicks', {
+    let nfl2018draftpicks = sequelize.define('nfl2018draftpicks', {
       picknumberround: DataTypes.INTEGER,
       picknumberoverall: DataTypes.INTEGER,
       roundnumber: DataTypes.INTEGER,
@@ -20,5 +20,5 @@
         }
       }
     });
-    return nfl2017draftpicks;
+    return nfl2018draftpicks;
   };

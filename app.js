@@ -6,6 +6,7 @@
   const models = require('./models');
   const mustacheExpress = require('mustache-express');
   const nfl2017draftpicks = require('./models/nfl2017draftpicks.js');
+  const nfl2018draftpicks = require('./models/nfl2018draftpicks.js');
 
   const app = express();
 
@@ -28,7 +29,15 @@
     });
   });
 
+  app.get('/draft2018_round1', function(req, res) {
+    models.nfl2018draftpicks.findAll({where: {roundnumber: 1}, order: [['id']]}).then(function(picks){
+    res.render('draft2018_round1', {picks: picks});
+    // for(i=0; i>models.nfl2017draftpicks.picknumberround
+    // models.nfl2017draftpicks.findAll({where: {picknumberround: ()}}).then(console.log);
+    });
+  });
+
   //Listening
   app.listen(3005, function() {
     console.log('Listening on Port 3005');
-  })
+  });

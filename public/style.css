@@ -1,42 +1,91 @@
 
   body {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Tahoma", "Arial", sans-serif;
     margin-left: 20px;
   }
 
   .title {
-    margin-left: 30px;
+    margin-left: 3vw;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
+    font-size: 3.5vw;
+    font-family: "Copperplate";
+  }
+
+  .subtitle {
+    margin-left: 8vw;
+    font-size: 2vw;
   }
 
   .roundLink {
+    font-size: 1.5vw;
     display: inline-block;
-    margin-left: 60px;
-  }
-
-  .roundTitle {
-    margin-left: 50px;
-    text-decoration: underline;
-  }
-
-  .draftRounds {
-    margin-left: 50px;
-  }
-
-  .selections {
-    margin-bottom: 10px;
-  }
-
-  .roundLink {
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 75px;
+    margin-left: 12vw;
     margin-top: 20px;
     margin-bottom: 40px;
     text-decoration: underline;
   }
 
+  .roundTitle {
+    margin-left: 60px;
+    text-decoration: underline;
+    font-size: 1.7vw;
+  }
+
+  .draftRounds {
+    margin-left: 55px;
+  }
+
+  .selections {
+    margin-bottom: 10px;
+    font-size: 1.1vw;
+    font-weight: bold;
+  }
+
   .roundLink:hover {
     color: red;
+  }
+
+  .images {
+    display: flex;
+    width: 55vw;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .nflLogo {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 20vw;
+  }
+
+  .nfllogoimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+
+  .playerPic {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .playerimg {
+    width: 21vw;
+    height: auto;
+    border: 2px solid black;
+    margin-right: 8vw;
+  }
+
+  .collegeLogo {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .collegelogoimg {
+    width: 10vw;
+    height: auto;
+    max-height: 13vw;
   }

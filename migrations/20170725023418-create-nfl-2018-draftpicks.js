@@ -2,7 +2,7 @@
   'use strict';
   module.exports = {
     up: function(queryInterface, Sequelize) {
-      return queryInterface.createTable('nfl2017draftpicks', {
+      return queryInterface.createTable('nfl2018draftpicks', {
         id: {
           allowNull: false,
           autoIncrement: true,
@@ -53,6 +53,6 @@
       });
     },
     down: function(queryInterface, Sequelize) {
-      return queryInterface.dropTable('nfl2017draftpicks');
+      return queryInterface.dropTable('nfl2018draftpicks');
     }
   };
