@@ -7,6 +7,7 @@
   const mustacheExpress = require('mustache-express');
   const nfl2017draftpicks = require('./models/nfl2017draftpicks.js');
   const nfl2018draftpicks = require('./models/nfl2018draftpicks.js');
+  const nflcoaches2018 = require('./models/nflcoaches2018.js');
 
   const app = express();
 
@@ -22,18 +23,40 @@
   });
 
   app.get('/draft2017_round1', function(req, res) {
-    models.nfl2017draftpicks.findAll({where: {roundnumber: 1}, order: [['id']]}).then(function(picks){
+    models.nfl2017draftpicks.findAll({where: {roundnumber: 1}, order: [['picknumberround']]}).then(function(picks){
     res.render('draft2017_round1', {picks: picks});
     // for(i=0; i>models.nfl2017draftpicks.picknumberround
     // models.nfl2017draftpicks.findAll({where: {picknumberround: ()}}).then(console.log);
     });
   });
 
+  app.get('/draft2017_round2', function(req, res) {
+    models.nfl2017draftpicks.findAll({where: {roundnumber: 2}, order: [['picknumberround']]}).then(function(picks){
+    res.render('draft2017_round2', {picks: picks});
+    // for(i=0; i>models.nfl2017draftpicks.picknumberround
+    // models.nfl2017draftpicks.findAll({where: {picknumberround: ()}}).then(console.log);
+    });
+  });
+
   app.get('/draft2018_round1', function(req, res) {
-    models.nfl2018draftpicks.findAll({where: {roundnumber: 1}, order: [['id']]}).then(function(picks){
+    models.nfl2018draftpicks.findAll({where: {roundnumber: 1}, order: [['picknumberround']]}).then(function(picks){
     res.render('draft2018_round1', {picks: picks});
     // for(i=0; i>models.nfl2017draftpicks.picknumberround
     // models.nfl2017draftpicks.findAll({where: {picknumberround: ()}}).then(console.log);
+    });
+  });
+
+  app.get('/draft2018_round2', function(req, res) {
+    models.nfl2018draftpicks.findAll({where: {roundnumber: 2}, order: [['picknumberround']]}).then(function(picks){
+    res.render('draft2018_round2', {picks: picks});
+    // for(i=0; i>models.nfl2017draftpicks.picknumberround
+    // models.nfl2017draftpicks.findAll({where: {picknumberround: ()}}).then(console.log);
+    });
+  });
+
+  app.get('/head_coaches2018', function(req, res) {
+    models.nflcoaches2018.findAll().then(function(picks){
+    res.render('head_coaches2018', {picks: picks});
     });
   });
 
