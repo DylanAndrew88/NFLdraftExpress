@@ -13,7 +13,7 @@
     margin-left: 40px;
     font-family: 'Orbitron', sans-serif;
     background-color: #58AF00;
-    width: 60vw;
+    width: 880px;
     border-radius: 0px 25px 0px 0px;
     border: 4px solid white;
   }
@@ -31,42 +31,103 @@
     height: 130px;
   }
 
+  .tagLine {
+    font-size: 20px;
+    font-family: 'Audiowide', cursive;
+    background-color: #2B75D3;
+    width: 600px;
+    border: 4px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 60px;
+    margin-top: -15px;
+    margin-bottom: 100px;
+    color: #C4C4C4;
+  }
+
+  .footer {
+    font-size: 12px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
 
   /*Index Page*/
 
 
-  .sections {
-    margin-left: 8vw;
-    font-size: 2vw;
+  .menuHeader {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 38px;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 60px;
   }
 
-  .roundLink {
-    font-size: 1.5vw;
+  .sections {
+    margin-left: 120px;
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .draftLink {
+    font-size: 24px;
     display: inline-block;
-    margin-left: 15vw;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-left: 100px;
     text-decoration: underline;
+    font-family: 'Rajdhani', sans-serif;
+    color: #275AD8;
+    cursor: pointer;
+  }
+
+  .draftLink:hover {
+    color: #DE331C;
+  }
+
+  .menuSelect {
+    margin-bottom: 100px;
+  }
+
+
+  /*Draft/Predictions Pages*/
+
+
+  .subTitle {
+    margin-left: 100px;
+    font-size: 34px;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: -40px;
   }
 
   .roundTitle {
-    margin-left: 60px;
+    margin-left: 140px;
     text-decoration: underline;
-    font-size: 1.7vw;
+    font-size: 28px;
+    font-family: 'Orbitron', sans-serif;
   }
 
   .draftRounds {
-    margin-left: 55px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 100px;
+  }
+
+  .pickBlock {
+    background-color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: -60px;
+    width: 800px;
+    border: 1px solid #404040;
   }
 
   .selections {
     margin-bottom: 10px;
-    font-size: 1.1vw;
-    font-weight: bold;
-  }
-
-  .roundLink:hover {
-    color: red;
+    font-size: 20px;
   }
 
   .images {
@@ -99,7 +160,7 @@
     width: 21vw;
     height: auto;
     border: 2px solid black;
-    margin-right: 8vw;
+    margin-right: 80px;
   }
 
   .collegeLogo {
@@ -111,4 +172,18 @@
     width: 10vw;
     height: auto;
     max-height: 13vw;
+  }
+
+  .roundLink {
+    font-size: 35px;
+    display: inline-block;
+    margin-left: 180px;
+    text-decoration: underline;
+    font-family: 'Rajdhani', sans-serif;
+    color: #275AD8;
+    cursor: pointer;
+  }
+
+  .roundLink:hover {
+    color: #DE331C;
   }

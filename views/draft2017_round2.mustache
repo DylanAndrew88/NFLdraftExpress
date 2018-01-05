@@ -4,6 +4,7 @@
     <head>
       <meta charset="utf-8">
       <title>NFL Draft Express - 2017 Draft</title>
+      <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Rajdhani" rel="stylesheet">
       <link rel="stylesheet" href="/public/style.css">
     </head>
     <body>
@@ -11,25 +12,29 @@
         <h1 class="title">NFL DRAFT EXPRESS</h1>
         <img src="https://images.vexels.com/media/users/3/141937/isolated/preview/56c7445ea476c9310814bb29ab240598-nfl-league-sport-american-football-by-vexels.png" class="nfllogo"/>
       </div>
+        <h4 class="tagLine">Your one-stop destination for the NFL offseason</h4>
       <h2 class="subTitle">NFL DRAFT 2017</h2>
-      <h3 class="roundTitle">Round 1</h3>
+      <h3 class="roundTitle">Round 2</h3>
       <ol class="draftRounds">
         {{#picks}}
-        <li class="selections">
-          {{team}} {{tradedfrom}}- {{position}} {{player}} ({{college}})
-        </li>
-        <div class="images">
-          <div class="nflLogo">
-    			<img src= {{nfllogo}} class="nfllogoimg" style="width:{{collegelogo}};"/>
-    			</div>
-    			<div class="playerPic">
-    			<img src= {{playerpic}} class="playerimg"/>
-    			</div>
+        <div class="pickBlock">
+          <li class="selections">
+            {{team}} {{tradedfrom}}- {{position}} {{player}} ({{college}})
+          </li>
+          <div class="images">
+            <div class="nflLogo">
+      			<img src= {{nfllogo}} class="nfllogoimg" style="width:{{collegelogo}};"/>
+      			</div>
+      			<div class="playerPic">
+      			<img src= {{playerpic}} class="playerimg"/>
+      			</div>
+          </div>
         </div>
         {{/picks}}
       </ol>
 
       <a href="/draft2017_round1"><h5 class="roundLink"><<< Round 1</h5></a><a href="/draft2017_round3"><h5 class="roundLink">Round 3 >>></h5></a>
 
+      <h1 class="footer">©NFLDraftExpress.Inc</h1>
     </body>
   </html>
