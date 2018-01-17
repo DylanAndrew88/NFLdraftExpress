@@ -1,6 +1,6 @@
 
  body {
-   background-color: #E1E1E1;
+   background-color: #CBCBCB;
  }
 
 
@@ -44,7 +44,7 @@
     padding-bottom: 5px;
     margin-left: 60px;
     margin-top: -15px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     color: #C4C4C4;
   }
 
@@ -64,20 +64,20 @@
     text-decoration: underline;
     font-size: 38px;
     font-family: 'Audiowide', cursive;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .sections {
     margin-left: 120px;
+    margin-top: 30px;
     font-size: 24px;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 20px;
   }
 
   .draftLink {
     font-size: 24px;
-    display: inline-block;
     margin-left: 100px;
+    margin-bottom: 40px;
     text-decoration: underline;
     font-family: 'Rajdhani', sans-serif;
     color: #275AD8;
@@ -100,7 +100,8 @@
     margin-left: 100px;
     font-size: 34px;
     font-family: 'Orbitron', sans-serif;
-    margin-top: -40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .roundTitle {

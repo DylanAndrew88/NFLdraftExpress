@@ -55,7 +55,7 @@
   });
 
   app.get('/head_coaches2018', function(req, res) {
-    models.nflcoaches2018.findAll().then(function(picks){
+    models.nflcoaches2018.findAll({order: [['id']]}).then(function(picks){
     res.render('head_coaches2018', {picks: picks});
     });
   });
