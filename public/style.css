@@ -42,7 +42,7 @@
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-left: 60px;
+    margin-left: 75px;
     margin-top: -22.5px;
     margin-bottom: 60px;
     color: #C4C4C4;
@@ -72,24 +72,25 @@
     margin-top: 30px;
     font-size: 24px;
     font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
   }
 
   .draftLink {
     font-size: 22px;
     margin-left: 100px;
-    margin-bottom: 40px;
     text-decoration: underline;
     font-family: 'Play', sans-serif;
-    color: #275AD8;
+    color: #084DCD;
     cursor: pointer;
+    margin-bottom: -10px;
   }
 
   .draftLink:hover {
-    color: #DE331C;
+    color: #CD0808;
   }
 
   .menuSelect {
-    margin-bottom: 100px;
+    margin-bottom: 140px;
   }
 
 
@@ -114,6 +115,7 @@
   .draftRounds {
     font-family: 'Rajdhani', sans-serif;
     margin-left: 100px;
+    margin-bottom: 80px;
   }
 
   .pickBlock {
@@ -183,10 +185,11 @@
     margin-left: 180px;
     text-decoration: underline;
     font-family: 'Rajdhani', sans-serif;
-    color: #091ED3;
+    color: #084DCD;
     cursor: pointer;
+    margin-top: -30px;
   }
 
   .roundLink:hover {
-    color: #DE331C;
+    color: #CD0808;
   }

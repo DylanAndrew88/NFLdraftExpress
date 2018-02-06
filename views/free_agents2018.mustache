@@ -18,16 +18,16 @@
         {{#picks}}
         <div class="pickBlock">
           <li class="selections">
-            {{team}}- {{name}} <br>
-            {{experience}}
+            {{position}} {{player}} ({{currentteam}}) <br>
+            New team: {{newteam}}
           </li>
           <div class="images">
             <div class="nflLogo">
-      			<img src= {{nfllogo}} class="nfllogoimg" style="width:{{picwidth}};"/>
-      		  </div>
-      			<div class="playerPic">
-      			<img src= {{coachpic}} class="playerimg"/>
-      			</div>
+            <img src= {{nfllogo}} class="nfllogoimg" style="width:{{picwidth}};"/>
+            </div>
+            <div class="playerPic">
+            <img src= {{playerimg}} class="playerimg"/>
+            </div>
           </div>
         </div>
         {{/picks}}
