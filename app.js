@@ -8,7 +8,7 @@
   const nfl2017draftpicks = require('./models/nfl2017draftpicks.js');
   const nfl2018draftpicks = require('./models/nfl2018draftpicks.js');
   const nflcoaches2018 = require('./models/nflcoaches2018.js');
-  const nfl2018freeagents = require('./models/nflcoaches2018.js');
+  const nfl2018freeagents = require('./models/nfl2018freeagents.js');
 
   const app = express();
 
@@ -54,9 +54,9 @@
     });
   });
 
-  app.get('/free_agents2018', function(req, res) {
-    models.nfl2018freeagents.findAll({order: [['id']]}).then(function(picks){
-    res.render('free_agents2018', {picks: picks});
+  app.get('/free_agentQBs2018', function(req, res) {
+    models.nfl2018freeagents.findAll({where: {position: 'QB'}, order: [['id']]}).then(function(picks){
+    res.render('free_agentQBs2018', {picks: picks});
     });
   });
 
