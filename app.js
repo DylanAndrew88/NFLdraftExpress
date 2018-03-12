@@ -72,6 +72,12 @@
     });
   });
 
+  app.get('/free_agentOLs2018', function(req, res) {
+    models.nfl2018freeagents.findAll({where: {position: 'OL'}, order: [['id']]}).then(function(picks){
+    res.render('free_agentOLs2018', {picks: picks});
+    });
+  });
+
   //Listening
   app.listen(app.get('port'), function() {
     console.log('Listening on Port 3005');
